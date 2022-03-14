@@ -1,12 +1,11 @@
-import React, {createElement, useContext, useState} from 'react'
-import {FirstMainBlock} from "../components/FirstMainBlock";
-import Flow_block from "../components/Flow_block";
+import React, {createElement, useContext, useState} from 'react';
 import 'antd/dist/antd.css';
 import jsplumb from 'jsplumb';
 import html2canvas from "html2canvas";
-const jsPlumbIn = jsplumb.jsPlumb;
 import source2 from "../images/procc_block.png";
-import source3 from "../images/comment-dots%201.png";
+import source3 from "../images/comment-dots.png";
+const jsPlumbIn = jsplumb.jsPlumb;
+
 
 
 export const AsIsPage = () =>{
