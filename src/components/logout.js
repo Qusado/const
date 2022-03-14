@@ -1,0 +1,31 @@
+import React, {useContext} from 'react'
+import {Link, useHistory} from "react-router-dom";
+import {AuthContext} from "../context/Auth.Context";
+
+export const Logout =()=> {
+    const history = useHistory()
+    const auth = useContext(AuthContext)
+    const logouthandler = event =>{
+        event.preventDefault()
+        auth.logout()
+        history.push("/")
+    }
+    if(auth.token){
+        return(
+            <>
+                <a className="navbar-brand link" onClick={logouthandler} href="/">
+                    LogOut
+                </a>
+            </>
+
+        )
+    }
+    else{
+        return (
+            <a className="navbar-brand"  href="/login">
+                LOGIN
+            </a>
+        )
+    }
+
+}

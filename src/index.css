@@ -5,9 +5,113 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('images/s3-bg-long-big.jpg');
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.BackPic {
+  z-index: 0;
+  height: 93vh;
+  width: 100%;
+}
+
+button.download{
+  text-transform: uppercase;
+  font-family: "Montserrat Medium";
+  background-color: #0AD275;
+  color: white;
+  border-radius: 6px;
+  border: white 0px;
+  height: 40px;
+  /*width: 23vw!important;*/
+}
+button.download:hover{
+  color: #0AD275;
+  background-color: white;
+}
+.card {
+  margin: 1rem;
+}
+@media (max-width: 575.98px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+.canva_cards{
+  overflow-y: auto;
+}
+.canva_cards .card{
+  margin: 5px;
+}
+
+button.save{
+  text-transform: uppercase;
+  font-family: "Montserrat Medium";
+  background-color: #0AD275;
+  color: white;
+  border-radius: 6px;
+  border: white 0px;
+  height: 40px;
+  /*width: 23vw!important;*/
+}
+button.save:hover{
+  color: #0AD275;
+  background-color: white;
+}
+button.connect{
+  text-transform: uppercase;
+  font-family: "Montserrat Medium";
+  background-color: #3693EA;
+  color: white;
+  border-radius: 6px;
+  border: white 0px;
+  height: 40px;
+  /*width: 23vw!important;*/
+}
+button.connect:hover{
+  background-color: #276aa8;
+  color: white;
+}
+.place_for_drop{
+  overflow: hidden;
+  background-color: #ECE6E6;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 5px 2px 14px -2px rgba(0, 0, 0, 0.6) inset;
+}
+.source_block{
+  background-color: rgba(255,255,255, 0.25);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  flex:1 0 auto;
+}
+.process_block{
+
+}
+
+#lineContainer .jtk-endpoint{
+  padding: 0!important;
+}
+#lineContainer svg{
+  padding: 0!important;
 }
