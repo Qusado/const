@@ -5,6 +5,8 @@ import 'antd/dist/antd.css';
 import jsplumb from 'jsplumb';
 import html2canvas from "html2canvas";
 const jsPlumbIn = jsplumb.jsPlumb;
+import source2 from "../images/procc_block.png";
+import source3 from "../images/comment-dots%201.png";
 
 
 export const AsIsPage = () =>{
@@ -216,7 +218,7 @@ export const AsIsPage = () =>{
                         <p className="fs-4 text-light mb-1">Блоки:</p>
                         <div className="source_block" style={{width: "45%", display:"flex"}}>
                             <div style={{margin: "auto"}}>
-                                <img src="../images/procc_block.png"
+                                <img src={source2}
                                      className="draggable"
                                      onDragStart={(e)=> dragStart(e)} style={{objectFit: "contain", width: "8vw"}}/>
                                 <p className="text-light mb-0" style={{textAlign: "center"}}>Часть процесса</p>
@@ -227,7 +229,7 @@ export const AsIsPage = () =>{
                         <p className="fs-4 text-light mb-1">Подписи:</p>
                         <div className="source_block" style={{width: "45%", display:"flex"}}>
                             <div style={{margin: "auto"}}>
-                                <img src="../images/comment-dots%201.png"
+                                <img src={source3}
                                      onDragStart={(e)=> dragStartRewrite(e)}
                                      style={{objectFit: "contain", width: "6vw"}}/>
                                 <p className="text-light mb-0" style={{textAlign: "center"}}>Комментарии</p>
