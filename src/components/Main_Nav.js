@@ -16,9 +16,9 @@ export const Main_Nav = () => {
                         <li className="nav-item">
                             <Link className="nav-item nav-link" to="/constructor">КОНСТРУКТОР</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-item nav-link" to="/flow">flow</Link>
-                        </li>
+                        {/*<li className="nav-item">*/}
+                        {/*    <Link className="nav-item nav-link" to="/flow">flow</Link>*/}
+                        {/*</li>*/}
                         <li>
                             <input className="form-control me-2 mx-4 col-3" type="search" placeholder="Search" aria-label="Search"/>
                         </li>
