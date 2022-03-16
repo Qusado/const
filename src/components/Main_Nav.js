@@ -1,7 +1,5 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import {LoginPage} from "../pages/login.page";
-import {Logout} from "./logout";
 
 
 export const Main_Nav = () => {
@@ -25,7 +23,6 @@ export const Main_Nav = () => {
                             <input className="form-control me-2 mx-4 col-3" type="search" placeholder="Search" aria-label="Search"/>
                         </li>
                     </ul>
-                    <Logout/>
                 </div>
             </div>
         </nav>

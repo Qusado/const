@@ -10,7 +10,7 @@ import Flow_block from "./components/Flow_block";
 
 
 export const useRoutes = isAuthenticated => {
-        if(isAuthenticated)
+        // if(isAuthenticated)
         {
                 return (
                     <Switch>
@@ -25,16 +25,16 @@ export const useRoutes = isAuthenticated => {
                     </Switch>
                 )
         }
-        else{
-                return (
-                    <Switch>
-                        <Route path="/login" exact>
-                            <LoginPage/>
-                        </Route>
-                        <Route exact path="/" component={MainPage}/>
-                        <Route exact path="/dataBase" component={BasePage}/>
-                        <Redirect to="/login"/>
-                    </Switch>
-                )
-        }
+        // else{
+        //         return (
+        //             <Switch>
+        //                 <Route path="/login" exact>
+        //                     <LoginPage/>
+        //                 </Route>
+        //                 <Route exact path="/" component={MainPage}/>
+        //                 <Route exact path="/dataBase" component={BasePage}/>
+        //                 <Redirect to="/login"/>
+        //             </Switch>
+        //         )
+        // }
 }
